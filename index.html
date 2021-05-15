@@ -1,43 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Zone</title>
-    <style>
-        h1 {
-            color: white;
-            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-            }
-            
-        body{
-            border-style: solid ; background-color: lightgray; margin-top: 100px;margin-bottom: 100px; margin-right: 150px; margin-left: 80px; padding-left: 15px  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+.header {
+    color:aqua;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+html{
+            border-style: solid ; background-color: lightgray; 
+            /*margin-top: 100px;margin-bottom: 100px; margin-right: 150px; margin-left: 80px; padding-left: 15px;*/
         }
-    </style>
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
 
+@media screen and ( max-width: 1024px ) {
+    img.responsive { width: 200px; }
+}
+@media screen and ( min-width: 1025px) {
+    img.responsive { width: 300px;}
+}
+img.responsive { height: auto; }
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
 </head>
 <body>
-   <h1 style="text-align-last:center">Welcome to DAV Fun Zone</h1> 
-   <br />
-   <p style=font-size:20px>I know everyone is excited for our summer vacations. If you are going outside in these vacations take all the precautions. I hope your summer vacations are going well. We all are going to miss our online classes, so i have decided to have a fun game for all of us.
-   </p>
-   <img style="width:300px;height: 150px;" src="https://www.aplustopper.com/wp-content/uploads/2019/12/Essay-on-Summer-Vacation.jpg" alt="Photo of beach">
-   <hr />
-   <h1>Intro to game</h1>
-   <p style=font-size:20px>This is a quiz game. It wil contain questions on topic like games, sports, movies & studies </p>
-   <p style=font-size:20px>The Rules are as follows-</p>
-   <ol style=font-size:20px>
-       <li>This game will have ten questions. </li>
-       <li>Do not keep your original name. Use sme funny name. Do not tell your name.</li>
-       <li><a href=https://quizizz.com/join?gc=4498269&from=challengeFriends target="_blank">Click here to join the game. </a></li>
-       <li>In case you are not able to join through the link, copy and paste the link joinmyquiz.com in the browser and enter code <b> 449 8269 </b> when asked.</li>
-   </ol>
-   <hr/>
-   <h1 style=font-size:20px>How will you inform me hat you want to play?</h1>
-    <p style=font-size:20px>
-        You can inform me by sending:"I will play" on Stars of 8 <sup>th</sup> F. We will play this game at 18<sup>th</sup> of may at 3:30 to 4:30.If anyone has problem, contact me. I will provde the link for Google meet.
-   </p>
-</body>
+
+    <div class="header">
+      <h1>Welcome to DAV Fun Zone</h1>
+    </div>
+    
+    <div class="row">
+        <div class="col-4">
+            <img class="responsive" src="https://www.aplustopper.com/wp-content/uploads/2019/12/Essay-on-Summer-Vacation.jpg" alt="Photo of beach">
+        </div>
+        <div class="col-8" style=font-size:20px>
+            I know everyone is excited for our summer vacations. If you are going outside in these vacations take all the precautions. I hope your summer vacations are going well. We all are going to miss our online classes, so i have decided to have a fun game for all of us.
+            <hr />
+        </div>
+    </div>
+    <div class="row">    
+      <div class="col-12">
+        <h1>Intro to game</h1>
+        <div style=font-size:20px>This is a quiz game. It wil contain questions on topic   
+            like games, sports, movies & studies 
+        </div>
+        <div style=font-size:20px>The Rules are as follows-</div>
+        <ol style=font-size:20px>
+            <li>This game will have ten questions. </li>
+            <li>Do not keep your original name. Use sme funny name. Do not tell your name.</li>
+            <li><a href=https://quizizz.com/join?gc=4498269&from=challengeFriends target="_blank">Click here to join the game. </a></li>
+            <li>In case you are not able to join through the link, copy and paste the link      joinmyquiz.com in the browser and enter code <b> 449 8269 </b> when asked.</li>
+         </ol>
+        <hr/>
+        <h1 style=font-size:20px>How will you inform me hat you want to play?</h1>
+        <div style=font-size:20px>
+        You can inform me by sending:"I will play" on Stars of 8 th F. We will play this game at 18th of may at 3:30 to 4:30.If anyone has problem, contact me. I will provde the link for Google meet.
+        </div>
+        </div>
+        </div>
+    </body>
 </html>
